@@ -8,9 +8,7 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 export default function (eleventyConfig) {
     // ****************************************************************** BASE CONFIG ********************** //
     // Order matters, put this at the top of your configuration file.
-    eleventyConfig.setDataDirectory("src/data");
-    eleventyConfig.setInputDirectory("src/pages");
-    eleventyConfig.setIncludesDirectory("src/includes");
+    eleventyConfig.setInputDirectory("src");
     eleventyConfig.addPassthroughCopy({ "src/assets/js": "js" });
     eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
         // output image formats
